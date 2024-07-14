@@ -1,0 +1,24 @@
+{
+  "name": "expressrestdynamicv2",
+  "version": "1.0.0",
+  "description": "Express REST API just by models",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "mongoose-autopopulate": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.7.0",
+    "nodemon": "^3.1.4"
+  }
+}
