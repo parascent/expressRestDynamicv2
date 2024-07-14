@@ -1,12 +1,12 @@
-var fs = require('fs');
+const fs  = require('fs')
 
-/*
- * initializes all models and sources them as .model-name
- */
+
+module.exports = []
+
 fs.readdirSync(__dirname).forEach(function (file) {
   if (file !== 'index.js') {
     var moduleName = file.split('.')[0];
-    exports[moduleName] = require('./' + moduleName)
-    exports[moduleName.toLowerCase()] = require('./' + moduleName)
+    module.exports[moduleName.toLowerCase()] = require('./' + moduleName)
   }
 })
+

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import testModel from './testModel'
+const mongoose = require('mongoose')
+
 var Schema = mongoose.Schema;
 
 var schema = new mongoose.Schema({

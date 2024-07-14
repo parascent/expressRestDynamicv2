@@ -1,10 +1,10 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-import mongoose from 'mongoose'
-import * as models from './models/index'
-import { processRequest } from './controllers/baseController'
-import env from './env.json'
-import multer from 'multer'
+const express = require('express')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const models = require('./models/index')
+const { processRequest } = require('./controllers/baseController')
+const env = require('./.env.json')
+const multer = require('multer')
 
 const app = express();
 

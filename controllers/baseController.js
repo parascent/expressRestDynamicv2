@@ -1,5 +1,4 @@
-import * as models from '../models/index'
-import { stat } from 'fs';
+const  models = require('../models/index')
 
 let type = ''
 let id = ''
@@ -20,6 +19,7 @@ var processRequest = async (req, res) => {
 
   type = req.params.type
   query = req.query
+
 
   //getModel
   model = models[type] ? models[type]['model'] : null
